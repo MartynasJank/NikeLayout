@@ -1,0 +1,569 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*END OF CSS RESET*/
+
+::selection {
+    background-color: black;
+    color: white;
+}
+::-moz-selection {
+    background-color: black;
+    color: white;
+}
+
+body{
+    font-family: 'Oswald', 'Main font', 'Georgia', 'courier', 'arial', 'sans-serif';
+    background-color: #c8cfdc;
+    padding: 50px;
+    padding-bottom: 0px;
+    color: #333333;
+}
+
+section{
+    background-color: #fff;
+    width: 100%;
+}
+
+section nav{
+    padding: 20px;
+    padding-bottom: 78px;
+    font-size: 0;
+}
+
+section nav *{
+    font-size: 16px;
+}
+
+section nav .logo{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+section nav li, section nav ul{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+section nav li.active{
+    color: #0089cf;
+    position: relative;
+}
+
+section nav li.active:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: 4px solid #0089cf;
+    bottom: -39px;
+    left: 0px;
+}
+
+section nav li{
+    margin-right: 42px; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section nav .rightSide{
+    float: right;
+}
+
+section nav .rightSide li{
+    line-height: 50px;
+    margin-right: 30px;
+}
+
+section nav .rightSide li:last-of-type{
+    margin-right: 0px;
+}
+
+section nav .rightSide li img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+section nav .rightSide span{
+    color: #0089cf;
+}
+
+section header .inner{
+    width: 80%;
+    max-width: 1060px;
+    margin: auto;
+    padding-bottom: 150px;
+    font-size: 0;
+}
+
+section header .inner *{
+    font-size: 16px;
+}
+
+section header .inner .leftSide, section header .inner .rightSide{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section header .inner .leftSide{
+    width: 66%;
+}
+
+section header .inner .rightSide{
+    width: 34%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+section header .inner .rightSide .like{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 43px;
+}
+
+section header .inner .rightSide .like:hover{
+    background-color: #ecf0f1;
+}
+
+section header .inner .rightSide .like img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+section header .inner .rightSide h4{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+section header .inner .rightSide h1{
+    font-size: 35px;    
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section header .inner .rightSide h3{
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 26px;
+}
+
+section header .inner .rightSide h6{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section header .inner .rightSide h6 span{
+    color: #0089cf;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section header .inner .rightSide .shoe{
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    line-height: 78px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+section header .inner .rightSide .shoe:not(:last-of-type){
+    margin-right: 10px;
+}
+
+section header .inner .rightSide .shoe img{
+    width: 80%;
+    vertical-align: middle;
+}
+
+section header .inner .rightSide .size{
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+select{
+    font-size: 14px;
+    padding: 20px;
+    padding-right: 50px;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    background-image: url(img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    margin-right: 10px;
+    line-height: 14px;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+button{
+    font-size: 14px;
+    padding: 20px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    vertical-align: top;
+    line-height: 14px;
+}
+
+.inactive{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.comfort{
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 260px 0 260px 50px;
+    color: #fff;
+}
+
+.comfort h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.comfort p{
+    font-size: 14px;
+    line-height: 2;
+    max-width: 380px;
+    font-weight: 100;
+}
+
+.feat2{
+    background-color: #f6f6f6;
+    padding: 50px;
+    font-size: 0;
+}
+
+.feat2 .third{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.feat2 .third.one{
+    width: 30%;
+}
+
+.feat2 .third.two{
+    width: 45%;
+}
+
+.feat2 .third.three{
+    width: 25%;
+}
+    
+.feat2 .third.one h6{
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.feat2 .third.one h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 29px;
+}
+
+.feat2 .third.one p{
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 50px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.feat2 .third.one h5{
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.feat2 .third.one h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.feat2 .third.one h4{
+    font-size: 12px;
+    color: #666666;
+    padding-bottom: 20px;
+}
+
+.feat2 .third.two img{
+    width: 100%;
+    height: auto;
+}
+
+.feat2 .third.three{
+    background-color: #fff;
+    border: 4px solid #e4e4e4;
+    padding: 26px;
+    padding-top: 21px;
+    box-sizing: border-box;
+}
+
+.feat2 .third.three h4{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.feat2 .third.three h1{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666666;
+    font-weight: 300;
+}
+
+.feat2 .third.three h6{
+    color: #0089cf;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.feat2 .third.three img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.feat2 .third.three .price{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.feat2 .third.three .price .rightSide{
+    float: right;
+}
+
+.sandwich{
+    vertical-align: middle;
+    cursor: pointer;
+    display: none;
+}
+
+.ic{
+    width: 16px;
+    height: 16px;
+    background-image: url(img/icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ic{
+    background-position: 0px 0px;
+}
+
+.ic2{
+    background-position: -16px 0px;
+}
+
+.ic3{
+    background-position: -32px 0px;
+}
+
+.dropdown{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    background-color: #0089cf;
+    color: #fff;
+    line-height: 2;
+    height: 0px;
+    transition: all 0.2s;
+}
+
+section nav li:hover .dropdown{
+    height: auto;
+    padding: 20px;
+}
+
+@media (max-width: 1100px){
+    section nav li{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1023px){
+    /* PLANSETEM IR TELEFONAM */
+    body{
+        padding: 0;
+    }
+    
+    section nav ul:not(.rightSide){
+        display: none;
+    }
+    
+    .sandwich{
+        display: inline-block;
+    }
+    
+    section header .inner .leftSide,
+    section header .inner .rightSide{
+        display: block;
+        width: 100%;
+    }
+    
+    .comfort{
+        padding: 150px 50px;
+    }
+    
+    .feat2 .third.two{
+        display: none;
+    }
+    
+    .feat2 .third.one,
+    .feat2 .third.three{
+        width: 50%;
+        vertical-align: top;
+    }
+    
+    .feat2 .third.one{
+        padding-right: 50px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 667px){
+    /* TIK PLANSETEM */
+    section header .inner .rightSide{
+        padding: 0;
+        padding-top: 45px;
+        text-align: center;
+    }
+    
+    section header .inner .rightSide .like{
+        margin: auto;
+        margin-bottom: 43px;
+    }
+}
+
+@media (max-width: 667px){
+	/* TIK TELEFONAM */    
+    section nav .rightSide{
+        display: none;
+    }
+    
+    .sandwich{
+        float: right;
+    }
+    
+    .sandwich img{
+        vertical-align: middle;
+    }
+    
+    section nav{
+        line-height: 50px;
+    }
+    
+    section header .inner .rightSide{
+        padding: 0;
+        padding-top: 45px;
+    }
+    
+    section header .inner .rightSide .like{
+        margin-bottom: 43px;
+    }
+    
+    .feat2 .third.one,
+    .feat2 .third.three{
+        width: 100%;
+        display: block;
+    }
+    
+    .feat2 .third.three{
+        margin-top: 45px;
+    }
+    
+    .feat2{
+        padding: 30px;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+
+
+
+
